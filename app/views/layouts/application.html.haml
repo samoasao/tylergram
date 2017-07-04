@@ -10,17 +10,14 @@
 
   %body
     %nav.navbar.navbar-default
-      .container-fluid
+      .navbar-container
         .navbar-header
-          %button.navbar-toggle.collapsed{ type: "button", "data-toggle" => "collapse", "data-target" => "#bs-example-navbar-collapse-1", "aria-expanded" => "false"}
-            %span.sr-only Toggle navigation
-            %span.icon-bar
+          %button.navbar-toggle.collapsed{"data-target" => "#bs-navbar-collapse-1", "data-toggle" => "collapse", type: "button"}
+            %span.sr-only Toggle Navigation
             %span.icon-bar
             %span.icon-bar
           .navbar-brand= link_to "Photogram", root_path
-      
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        .collapse.navbar-collapse#bs-example-navbar-collapse-1
+        .collapse.navbar-collapse#bs-navbar-collapse-1
           %ul.nav.navbar-nav.navbar-right
             %li
               = link_to "New Post", new_post_path
