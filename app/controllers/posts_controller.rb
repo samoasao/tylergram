@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   def index
+    @posts = Post.all
     
   end
   
@@ -13,10 +14,13 @@ class PostsController < ApplicationController
      redirect_to posts_path  
   end
   
+
   private
 
   def post_params  
     params.require(:post).permit(:image, :caption)
   end  
+  
+  
   
 end
