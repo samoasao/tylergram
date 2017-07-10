@@ -1,8 +1,10 @@
 .form-wrapper
   = simple_form_for @post, html: { class: 'form-horizontal', multipart: true } do |f|
-    .form-group
-      = f.input :image
-    .form-group.text-center
-      = f.input :caption
-    .form-group.text-center
-      = f.button :submit, class: 'btn-success'
+   
+    .container-fluid
+      .form-group.text-center
+        = f.input :image
+      .form-group.text-center
+        = f.input :caption, label: false, placeholder: 'Add your caption', :input_html => { :style=> 'width: 100%'}
+      .form-group.text-center
+        = f.button :submit, class: 'btn-success'
