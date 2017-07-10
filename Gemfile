@@ -16,7 +16,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'haml'
 gem "paperclip", "~> 5.0.0"
-gem 'aws-sdk', '~> 2.3'
+gem 'aws-sdk'
 gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
